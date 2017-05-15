@@ -20,9 +20,9 @@ export const logout = () => dispatch => (
     .then(dispatch(receiveCurrentUser(null)))
 );
 
-export const receiveCurrentUser = (user) => ({
+export const receiveCurrentUser = currentUser => ({
   type: RECEIVE_CURRENT_USER,
-  user
+  currentUser
 });
 
 export const receiveErrors = (errors) => ({
